@@ -6,11 +6,21 @@
 /*   By: gletilly <gletilly@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/09 15:55:58 by gletilly          #+#    #+#             */
-/*   Updated: 2025/12/09 17:39:12 by gletilly         ###   ########.fr       */
+/*   Updated: 2025/12/11 19:57:26 by gletilly         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap()
+	: ClapTrap()
+{
+	_hitPoints = 100;
+	_energyPoints = 50;
+	_attackDamage = 20;
+
+	std::cout << "ScavTrap " << _name << " is constructed!" << std::endl;
+}
 
 ScavTrap::ScavTrap(const std::string& name) 
 	: ClapTrap(name)

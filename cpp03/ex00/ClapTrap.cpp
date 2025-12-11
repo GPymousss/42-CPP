@@ -6,11 +6,20 @@
 /*   By: gletilly <gletilly@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 16:48:30 by gletilly          #+#    #+#             */
-/*   Updated: 2025/12/08 17:59:34 by gletilly         ###   ########.fr       */
+/*   Updated: 2025/12/11 19:56:11 by gletilly         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
+
+ClapTrap::ClapTrap()
+	: _name("Unknow")
+	, _hitPoints(10)
+	, _energyPoints(10)
+	, _attackDamage(0)
+{
+	std::cout << "ClapTrap " << _name << " is constructed!" << std::endl;
+}
 
 ClapTrap::ClapTrap(const std::string& name)
 	: _name(name)

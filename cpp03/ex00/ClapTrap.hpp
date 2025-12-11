@@ -6,7 +6,7 @@
 /*   By: gletilly <gletilly@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/08 16:42:29 by gletilly          #+#    #+#             */
-/*   Updated: 2025/12/08 17:58:09 by gletilly         ###   ########.fr       */
+/*   Updated: 2025/12/11 19:56:23 by gletilly         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class ClapTrap
 		unsigned int	_attackDamage;
 
 	public:
+		ClapTrap();
 		ClapTrap(const std::string& name);
 		ClapTrap(const ClapTrap& other);
 		ClapTrap& operator=(const ClapTrap& other);
