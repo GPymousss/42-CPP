@@ -3,11 +3,10 @@ CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp \
+				Brain.cpp \
 				Animal.cpp \
 				Cat.cpp \
-				Dog.cpp \
-				WrongAnimal.cpp \
-				WrongCat.cpp
+				Dog.cpp
 
 COMPILED	=	$(SRCS:.cpp=.o)
 
